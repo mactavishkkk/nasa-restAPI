@@ -18,7 +18,7 @@ async function renderSentry(sentry) {
     const olElement = document.getElementById("sentry-list")
     sentry.forEach(element => {
         const liElement = document.createElement("li")
-        const text = `ID: ${element.id} | NOME: ${element.name} | Risco de Colisão ente: ${element.yearMinColision} e ${element.yearMaxColision}`
+        const text = `ID: ${element.sentryId} | NOME: ${element.name} | Risco de Colisão ente: ${element.yearMinColision} e ${element.yearMaxColision}`
         liElement.innerText = text
         olElement.appendChild(liElement);
     })
